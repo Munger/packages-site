@@ -3,17 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Munger Packages</title>
+<title>Munger Software</title>
 <style>
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.6;color:#333}
   h1,h2{color:#111}
-  pre{background:#f5f5f5;padding:12px;border-radius:6px;overflow-x:auto}
-  code{font-size:0.9em}
+  .cmd{display:block;background:#f5f5f5;padding:4px 12px;font-family:SFMono-Regular,Consolas,monospace;font-size:0.9em;white-space:pre-wrap;overflow-x:auto;margin:4px 0}
+  .cmd:first-child{padding-top:8px;border-radius:6px 6px 0 0;margin-top:0}
+  .cmd:last-child{padding-bottom:8px;border-radius:0 0 6px 6px;margin-bottom:0}
+  .cmd:only-child{border-radius:6px}
+  pre{font-family:SFMono-Regular,Consolas,monospace;font-size:0.9em;white-space:pre-wrap}
   a{color:#0366d6}
   hr{border:none;border-top:1px solid #ddd;margin:30px 0}
   .avatar{float:left;margin-right:18px;margin-top:4px}
   .avatar img{width:96px;height:96px;border-radius:8px}
   .copyright{color:#888;font-size:0.85em}
+  .cmdbox{background:#f5f5f5;padding:8px 0;border-radius:6px}
 </style>
 </head>
 <body>
@@ -24,20 +28,21 @@
 <p>APT repository, Homebrew tap, and open-source projects by <a href="https://github.com/Munger">Tim Hosking</a>.</p>
 
 <h2>APT Repository</h2>
-<pre>curl -fsSL https://apt.mungerware.com/key.asc | sudo gpg --dearmor -o /usr/share/keyrings/munger.gpg
-echo "deb [signed-by=/usr/share/keyrings/munger.gpg] https://apt.mungerware.com/ noble main" | sudo tee /etc/apt/sources.list.d/munger.list
-sudo apt-get update
-sudo apt-get install mirror-dedupe</pre>
+
+<div class="cmdbox">
+<samp class="cmd">curl -fsSL https://apt.mungerware.com/key.asc | sudo gpg --dearmor -o /usr/share/keyrings/munger.gpg</samp>
+<samp class="cmd">echo "deb [signed-by=/usr/share/keyrings/munger.gpg] https://apt.mungerware.com/ noble main" | sudo tee /etc/apt/sources.list.d/munger.list</samp>
+<samp class="cmd">sudo apt-get update</samp>
+<samp class="cmd">sudo apt-get install mirror-dedupe</samp>
+</div>
 
 <p><a href="https://apt.mungerware.com/">apt.mungerware.com</a></p>
 
-<h2>Packages</h2>
-<ul>
-  <li><a href="https://github.com/Munger/mirror-dedupe">mirror-dedupe</a> &mdash; pool-based Debian/Ubuntu mirror syncing with hardlink deduplication</li>
-</ul>
-
 <h2>GPG Key</h2>
-<pre>curl -fsSL https://apt.mungerware.com/key.asc</pre>
+
+<div class="cmdbox">
+<samp class="cmd">curl -fsSL https://apt.mungerware.com/key.asc</samp>
+</div>
 
 <p><a href="https://github.com/Munger/packages-site">Source repository</a></p>
 
