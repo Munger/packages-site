@@ -37,7 +37,7 @@
           if (item.type === 'dir') {
             html += '<tr><td><a href="#" class="d" data-d="' + (path ? path + '/' : '') + item.name + '">' + item.name + '/</a></td><td>dir</td><td></td></tr>';
           } else {
-            html += '<tr><td><a href="' + (path ? path + '/' : '') + item.name + '">' + item.name + '</a></td><td>file</td><td>' + fmt(item.size) + '</td></tr>';
+            html += '<tr><td><a href="/' + (path ? path + '/' : '') + item.name + '">' + item.name + '</a></td><td>file</td><td>' + fmt(item.size) + '</td></tr>';
           }
         }
         el.innerHTML = html;
