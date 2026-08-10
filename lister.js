@@ -4,10 +4,10 @@
  *
  * Copyright (c) 2026 Tim Hosging
  * License: MIT (https://github.com/Munger/packages-site)
- * Source: https://github.com/Munger/packages
+ * Source: https://github.com/MungerWare/apt-packages
  */
 (function() {
-  var repo = 'Munger/packages';
+  var repo = 'MungerWare/apt-packages';
   var el = document.getElementById('list');
   var hd = document.getElementById('dirpath');
   var pt = document.getElementById('pagetitle');
