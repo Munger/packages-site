@@ -2,7 +2,7 @@
  * lister.js — Directory browser for Munger APT Repository
  * https://apt.mungerware.com/pool/ | https://apt.mungerware.com/dists/
  *
- * Copyright (c) 2026 Tim Hosging
+ * Copyright (c) 2026 Tim Hosking
  * License: MIT (https://github.com/Munger/packages-site)
  * Source: https://github.com/MungerWare/apt-packages
  */
